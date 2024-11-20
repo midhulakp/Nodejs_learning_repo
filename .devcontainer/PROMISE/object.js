@@ -29,3 +29,30 @@ function person(name, age) {
   console.log(obj3.details());
   
   
+  //Object.create()
+
+  let a = {
+    name:"nila",
+    age:5
+  }
+
+  let b = Object.create(a)
+    b.address="bangalore"
+    console.log(b);
+    console.log(b.name);
+  
+  
+
+  //factor function
+
+  function personDetail(name,age){
+            return{
+                name,
+                age
+            }
+  }
+
+  let ramesh = personDetail("ramesh",30)
+  let suresh = personDetail("suresh",29)
+  console.log(ramesh);
+  
