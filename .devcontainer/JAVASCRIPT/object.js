@@ -86,4 +86,53 @@ function person(name, age) {
   console.log("before",value3);
  value(value3);
   console.log("after", value3);
-  
+
+
+
+
+
+
+
+
+
+
+  //METHODS
+let ab = {
+  name:"tony",
+  age:25
+}
+
+//to make objects immutable
+//Object.freeze() ---> WE can only read the properties ----no:update,delete,add   to check is freeze or not ----->isFrozen()
+//Object.freeze(ab);
+
+
+//Object.seal(ab);  yes: read,update  no:delete,add         to check se or not ------------>isSealed()
+//Object.seal(ab);
+
+
+// Object.preventExtensions(ab);  yes read,update,delete    to check is preventeExtension or not -------------->isExtensible()
+Object.preventExtensions(ab);
+
+
+
+//read
+
+console.log(ab.name);
+console.log(ab["name"]);
+
+//Update
+
+ab.name="stark";
+console.log(ab);
+
+//Add
+
+ab.address ="Bangalore"
+console.log(a);
+
+//Delete
+delete ab.name;
+console.log(ab);
+
+
