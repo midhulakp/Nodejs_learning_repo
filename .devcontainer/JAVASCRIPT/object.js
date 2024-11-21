@@ -56,3 +56,34 @@ function person(name, age) {
   let suresh = personDetail("suresh",29)
   console.log(ramesh);
   
+
+
+//PASS BY VALUE
+
+  let value1 = 2;
+
+  function add(value2){
+    value2 = value2*value2;
+    return value2;
+  }
+
+  console.log("before",value1);
+  add(value1);
+  console.log("after", value1);
+  
+  
+//PASS BY REFERENCE
+
+  let value3= {
+    name:"tony"
+  };
+
+  function value(value2){
+    value2.name="stark"
+    return value2;
+  }
+
+  console.log("before",value3);
+ value(value3);
+  console.log("after", value3);
+  
